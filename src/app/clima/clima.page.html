@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>clima</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo">
+  <ion-item>
+    <ion-label position="floating">Ingrese la ciudad</ion-label>
+    <ion-input placeholder="Ciudad" [(ngModel)] = "ciudad"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="predict()" expand="block" fill="clear" shape="round">
+      Predecir
+    </ion-button>
+  </ion-item>
+  <ion-item *ngIf="result" class="fondo">
+    <ion-label>{{result}}</ion-label>
+  </ion-item>
+</ion-content>

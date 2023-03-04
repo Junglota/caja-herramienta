@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>edad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Ingrese el nombre</ion-label>
+    <ion-input placeholder="Nombre" [(ngModel)] = "name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="predict()" expand="block" fill="clear" shape="round">
+      Predecir
+    </ion-button>
+  </ion-item>
+  
+  <ng-container *ngIf="result">
+    <ion-item class="center" id="text">
+      <ion-label>{{result}}</ion-label>
+    </ion-item>
+    <ion-item class="center" id="img">
+      <img [src]="img" alt="Male">
+    </ion-item>
+  </ng-container>
+</ion-content>

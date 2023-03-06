@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>universidades</ion-title>
+    <ion-title>Lista de universidades</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,14 +14,17 @@
   </ion-item>
   <ion-item>
     <ion-button (click)="predict()" expand="block" fill="clear" shape="round">
-      Predecir
+      Buscar
     </ion-button>
   </ion-item>
   <ion-item *ngFor="let uni of arrUni">
     <ion-label >
-      Nombre de la universidad: {{uni.name}}<br>
-      Dominio de la universidad: {{uni.domains}}<br>
-      Link de la universidad: {{uni.web_pages}}
+      <strong>Nombre de la universidad: </strong>
+      <ion-label>{{uni.name}}</ion-label>
+      <strong>Dominio de la universidad: </strong>
+      <br>{{uni.domains}}<br>
+      <strong>Link de la universidad: </strong>
+      <br>{{uni.web_pages}}
       
     </ion-label>
   </ion-item>

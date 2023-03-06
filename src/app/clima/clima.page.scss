@@ -1,3 +1,40 @@
 .fondo{
-    background-color: #6C7B8B !important;
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+
+}
+
+.grados{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5em !important;
+    text-align: center;
+    display: block;
+}
+.estado{
+    font-family:sans-serif;
+    font-size: 1.5em !important;
+    text-align: center;
+    display: block;
+}
+.imagen{
+    display: block;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+.ciudad{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: block;
+    padding-top: 5%;
+    font-size: 2em;
+}
+.principal{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+ion-content {
+  display: flex;
+  flex-direction: column;
 }
